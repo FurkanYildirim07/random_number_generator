@@ -9,15 +9,15 @@
 * Macros
  ******************************************************************************/
 
-#define CONSOLE_WHITE 0x07
-#define CONSOLE_RED 0x0C
-#define CONSOLE_GREEN 0x0A
-#define CONSOLE_BLUE 0x09
+#define CONSOLE_WHITE   0x07
+#define CONSOLE_RED     0x0C
+#define CONSOLE_GREEN   0x0A
+#define CONSOLE_BLUE    0x09
 
 #define MAX_CNT_NUM   10000
 
 #define UNIQUE_NUMBERS   1
-#define ORDINARY_NUMBERS   2
+#define ORDINARY_NUMBERS 2
 
 /*******************************************************************************
 * Private Variables
