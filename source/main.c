@@ -51,7 +51,7 @@ void buffer_clean(void);
 
 void console_color_set(int color);
 
-int m_sorting_func(const void*, const void*);
+int m_sorting_func(const void* first_element, const void* second_element);
 
 /*******************************************************************************
 * Main Function
