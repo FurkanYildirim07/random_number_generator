@@ -92,7 +92,7 @@ void number_type_get(void)
            (ORDINARY_NUMBERS != g_numbers_types))
     {
         printf("[1]: unique numbers \n");
-        printf("[2]: ordinary numbers \n");
+        printf("[2]: mixed numbers \n");
         printf("Choose the number types: ");
         scanf("%lld", &g_numbers_types);
 
