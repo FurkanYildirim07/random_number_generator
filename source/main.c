@@ -17,7 +17,7 @@
 #define MAX_CNT_NUM   10000
 
 #define UNIQUE_NUMBERS   1
-#define ORDINARY_NUMBERS 2
+#define MIXED_NUMBERS 2
 
 /*******************************************************************************
 * Private Variables
@@ -45,7 +45,7 @@ void count_of_nums_get(void);
 
 void unique_numbers_generate(void);
 
-void ordinary_numbers_generate(void);
+void mixed_numbers_generate(void);
 
 void buffer_clean(void);
 
@@ -73,7 +73,7 @@ int main(void)
         }
         else
         {
-            ordinary_numbers_generate();
+            mixed_numbers_generate();
         }
 
         buffer_clean();
@@ -89,7 +89,7 @@ void number_type_get(void)
     printf("---------------------------------------------------------------\n");
 
     while ((UNIQUE_NUMBERS != g_numbers_types) && 
-           (ORDINARY_NUMBERS != g_numbers_types))
+           (MIXED_NUMBERS != g_numbers_types))
     {
         printf("[1]: unique numbers \n");
         printf("[2]: mixed numbers \n");
@@ -97,7 +97,7 @@ void number_type_get(void)
         scanf("%lld", &g_numbers_types);
 
         if ((UNIQUE_NUMBERS != g_numbers_types) && 
-            (ORDINARY_NUMBERS != g_numbers_types))
+            (MIXED_NUMBERS != g_numbers_types))
         {
             console_color_set(CONSOLE_RED);
             printf("\tWrong number\n");
@@ -239,7 +239,7 @@ void unique_numbers_generate(void)
     }
 }
 
-void ordinary_numbers_generate(void)
+void mixed_numbers_generate(void)
 {
     for (uint32_t idx = 0U; idx < g_count_numbers; idx++)
     {
